@@ -1,22 +1,38 @@
-# Wireless Penetration Testing 
+# <div align="center"> Wireless Penetration Testing </div>
 
-##### Wireless penetration testing is a part of network penetration testing (NPT). This is a Security assessment process focused on Identifying vulnerabilities and reviewing general security tweaks in Network. Wireless pentesting is crucial for securing these networks against unauthorized access, data theft, and other cyber threats.
-##### An attacker can easily spoof and view the data of other users within the network.
+###### Wireless penetration testing is a part of network penetration testing (NPT). This is a Security assessment process focused on Identifying vulnerabilities and reviewing general security tweaks in Network. Wireless pentesting is crucial for securing these networks against unauthorized access, data theft, and other cyber threats.
+###### An attacker can easily spoof and view the data of other users within the network.
 
 ## Features
-- Basic 
+- Basics
 - Install Wi-fi Drivers for OS like kali,ubuntu etc..
 - Scan Local Area WiFi networks.
 - Deauthenticate Attack
 - Capture Handshake file.
 - Crack handshake using aircrack.
 - Crack handshake using John/Hashcat.
-- 
+- WhiteListing 
+
+# Requirements
+### Wireless Adapter, that supports:
+* 2.4g,5g
+* Monitor Mode
+* Packet Injection
+### Linux Operating System like:
+* kali
+* Parrot
+
+# Installation of WiFi Drivers
+Operating systems like Parrot come with pre-built WiFi drivers, whereas Kali does not include pre-built wireless drivers.
+* ## Let's download and set up drivers for Kali Linux
+``` 
+curl -O https://github.com/Esther7171/WiFi-Pentesting/raw/refs/heads/main/compat-wireless-2010-06-28.tar.bz2
+```
 
 # Install One Shot
 ## Copy and past on your's Kali Terminal 🙂
 ```bash
-git clone https://github.com/Esther7171/Wifi_hacking.git && cd Wifi_hacking && chmod +x install.sh && ./install.sh
+git clone https://github.com/Esther7171/WiFi-Pentesting && cd WiFi-Pentesting && chmod +x install.sh && ./install.sh
 ```
 
 ## Install Manually
