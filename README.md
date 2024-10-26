@@ -2,10 +2,10 @@
 
 
 ## Index
-- [What is WiFi Pentesting](https://github.com/Esther7171/WiFi-Pentesting/blob/main/README.md#what-is-wi-fi-pentesting-why-is-it-so-important-)
-- Requirements
-- Recommended Products
-- Install Wi-fi Drivers for OS like kali,ubuntu etc..
+- [What is Wi-Fi Pentesting. Why is it So Important ?](https://github.com/Esther7171/WiFi-Pentesting/blob/main/README.md#what-is-wi-fi-pentesting-why-is-it-so-important-)
+- [Requirements](https://github.com/Esther7171/WiFi-Pentesting/edit/main/README.md#requirements)
+- [Recommended Products](https://github.com/Esther7171/WiFi-Pentesting/edit/main/README.md#recommended-products)
+- [Install Wi-fi Drivers](https://github.com/Esther7171/WiFi-Pentesting/edit/main/README.md#recommended-products)
 - Scan Local Area WiFi networks.
 - Deauthenticate Attack
 - Capture Handshake file.
@@ -27,16 +27,8 @@ An attacker can easily spoof and view other users' data within the network, perf
 * kali
 * Parrot
 
-# Installation of WiFi Drivers
-## Install One Shot
-### Copy and past on your's Kali Terminal 🙂
-```bash
-git clone https://github.com/Esther7171/WiFi-Pentesting && cd WiFi-Pentesting && chmod +x install.sh && ./install.sh
-```
-* This Script will automaticall install Drivers kali as well External Wifi adapters.
-
 # Recommended Products
-## In my case im using TP-LINK Archer T2U Plus AC600 
+### In my case im using TP-LINK Archer T2U Plus AC600 
 <div align="center">
   <img src="https://github.com/Esther7171/web-development/assets/122229257/257d5af9-d9b3-40f3-b7fe-298c0fe03918" height="400"></div>img
 </div>
@@ -54,6 +46,17 @@ This adapter has a Realtek RTL8821AU Chipset. It will cost u ₹1,100 or maybe l
 ## If you don’t have any budget concerns,you can go for this Alfa WiFi adapter, which costs around 4-10k depending on sales or market prices. They have more range
 👉[AC1200](https://www.amazon.in/Alfa-AC1900-Wifi-adapter-Long-Range/dp/B01MZD7Z76)
 👉[AC1900](https://www.amazon.in/Alfa-AC1900-Wifi-adapter-Long-Range/dp/B01MZD7Z76)
+
+# Installation of WiFi Drivers
+## Install One Shot
+### Copy and past on your's Kali Terminal 🙂
+```bash
+git clone https://github.com/Esther7171/WiFi-Pentesting && cd WiFi-Pentesting && chmod +x install.sh && ./install.sh
+```
+* This Script will automaticall install Drivers kali as well External Wifi adapters.
+
+# Recommended Products
+
 
 # step 1. Monitor mode 
 #### First you need adapter who's support Monitor mode && packet injection if u using this TP-link T2U plus. So ur ready
