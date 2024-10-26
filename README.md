@@ -46,6 +46,7 @@ This adapter has a Realtek RTL8821AU Chipset. It will cost u ₹1,100 or maybe l
 
 ## If you don’t have any budget concerns,you can go for this Alfa WiFi adapter, which costs around 4-10k depending on sales or market prices. They have more range
 👉[AC1200](https://www.amazon.in/Alfa-AC1900-Wifi-adapter-Long-Range/dp/B01MZD7Z76)
+
 👉[AC1900](https://www.amazon.in/Alfa-AC1900-Wifi-adapter-Long-Range/dp/B01MZD7Z76)
 
 # Installation of WiFi Drivers
