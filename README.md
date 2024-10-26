@@ -1,17 +1,22 @@
 # <div align="center"> Wireless Penetration Testing </div>
 
-###### Wireless penetration testing is a part of network penetration testing (NPT). This is a Security assessment process focused on Identifying vulnerabilities and reviewing general security tweaks in Network. Wireless pentesting is crucial for securing these networks against unauthorized access, data theft, and other cyber threats.
-###### An attacker can easily spoof and view the data of other users within the network.
 
-## Features
-- Basics
+## Index
+- What is WiFi Pentesting
+- Requirements
+- Recommended Products
 - Install Wi-fi Drivers for OS like kali,ubuntu etc..
 - Scan Local Area WiFi networks.
 - Deauthenticate Attack
 - Capture Handshake file.
 - Crack handshake using aircrack.
 - Crack handshake using John/Hashcat.
-- WhiteListing 
+- WhiteListing Mac
+
+# What is Wi-Fi Pentesting. Why is it So Important ?
+Wireless penetration testing is a part of network penetration testing (NPT). This is a Security assessment process focused on Identifying vulnerabilities and reviewing general security tweaks in Network. Wireless pentesting is crucial for securing these networks against unauthorized access, data theft, and other cyber threats.
+
+An attacker can easily spoof and view other users' data within the network, perform various attacks to disrupt it, and spread different types of malware, such as worms, to infect the entire network.
 
 # Requirements
 ### Wireless Adapter, that supports:
@@ -23,58 +28,21 @@
 * Parrot
 
 # Installation of WiFi Drivers
-Operating systems like Parrot come with pre-built WiFi drivers, whereas Kali does not include pre-built wireless drivers.
-* ## Let's download and set up drivers for Kali Linux
-``` 
-curl -O https://github.com/Esther7171/WiFi-Pentesting/raw/refs/heads/main/compat-wireless-2010-06-28.tar.bz2
-```
-
-# Install One Shot
-## Copy and past on your's Kali Terminal 🙂
+## Install One Shot
+### Copy and past on your's Kali Terminal 🙂
 ```bash
 git clone https://github.com/Esther7171/WiFi-Pentesting && cd WiFi-Pentesting && chmod +x install.sh && ./install.sh
 ```
+* This Script will automaticall install Drivers kali as well External Wifi adapters.
 
-## Install Manually
-
-Download Driver tar file from above on your system 
-Go to you download dir where it is install 
-
-```bash
-  cd Downloads
-```
-## Extract it
-extract it manual or use :
-```bash
-  tar -xjvf compat-wireless-2010-06-28.tar.bz2 
-```
-go inside the dir of compact-wireless
-```bash
-cd compat-wireless-2010-06-28/
-```
-Run both the commands  :
-```bash
-sudo make unload 
-```
-```bash
-sudo make load 
-```
-## Restart your system 
-```bash
-init 6
-```
-## Check is it working or not 
-type to check wlan0 or wlan1 interface showing or not
-```bash
-iwconfig
-```
-#  installation of Adapter DRIVERS 
-In my case im using TP-LINK Archer T2U Plus AC600 
-
-![tp-link adapter](https://github.com/Esther7171/web-development/assets/122229257/257d5af9-d9b3-40f3-b7fe-298c0fe03918)
+# Recommended Products
+## In my case im using TP-LINK Archer T2U Plus AC600 
+<div align="center">
+  <img src="https://github.com/Esther7171/web-development/assets/122229257/257d5af9-d9b3-40f3-b7fe-298c0fe03918" height="400"></div>img
+</div>
 
 ## Why should i buy this adapter ?
-This adapter has a Realtek RTL8821AU Chipset . It will cost u ₹1,100 or maybe less . it have a good range and It support in linux community and has driver for Kali linux , Parrot OS .etc Archer T2U Plus is on sale under 1000 INR , which is a very affordable price and it too good in my opinion for Beginners in Pentesting.
+This adapter has a Realtek RTL8821AU Chipset. It will cost u ₹1,100 or maybe less. it have a good range and It support in linux community and has driver for Kali linux, Parrot OS ..etc Archer T2U Plus is on sale under 1000 INR, which is a very affordable price and it too good in my opinion for Beginners in Pentesting.
 ## Where to buy
 
 👉[Amazon](https://www.amazon.in/TP-Link-Wireless-Adapter-Archer-T2U/dp/B07P681N66?th=1)
@@ -83,64 +51,9 @@ This adapter has a Realtek RTL8821AU Chipset . It will cost u ₹1,100 or maybe 
 
 👉[AC1300 T3U](https://www.amazon.in/TP-LINK-T3U-Wireless-MU-MIMO-Supports/dp/B0859M539M/ref=sr_1_1?adgrpid=1320515074786039&hvadid=82532451038389&hvbmt=be&hvdev=c&hvlocphy=158589&hvnetw=o&hvqmt=e&hvtargid=kwd-82533072486919%3Aloc-90&hydadcr=18064_2117722&keywords=t3u&qid=1701157393&sr=8-1&th=1)
 
-## To install tp-link T2U plus Driver for Debian Based Linux Distros (Ubuntu/Kali Linux)(x86_64) :
-
-1. Update the package information :
-```bash
-sudo apt update -y 
-```
-2. Install dkms and git :
-```bash
-sudo apt install dkms git
-```
-3. Install Build Dependencies :
-```bash
-sudo apt install build-essential libelf-dev linux-headers-$(uname -r)
-```
-4. Download the Driver files using git :
-```bash
-git clone https://github.com/aircrack-ng/rtl8812au.git
-```
-5. Navigate to the Downloaded directory :
-```bash
-cd rtl88*
-```
-6. Install the Driver
-```bash
-sudo make dkms_install
-```
-7. Check the wireless interfaces by typing :
-```bash
-lsusb
-```        
-## or
-```bash
-iwconfig
-```    
-## 8. Uninstall Driver in Linux :
-* Check the module name and version using the command sudo dkms status.
-```bash
-$ dkms status  
-8812au, 5.6.4.2_35491.20191025, 5.10.63+, armv6l: installed  
-rtl8188fu, 1.0, 5.10.63+, armv6l: installed.
-```
-* here module name is 8812au and module version is 5.6.4.2_35491.20191025.
-* use
-```bash  
-sudo dkms remove <module>/<module-version>.
-```
-```bash
-$ sudo dkms remove 8812au/5.6.4.2_35491.20191025 --all  
-
-Deleting module version: 5.6.4.2_35491.20191025 completely from the DKMS tree.  
-
-Done.  
-```
-* delete this file using sudo rm -rf /var/lib/dkms/8812au/.
-
-----------------------------------------------------------
-
-# Wi-Fi Hacking Tutorial for beginners
+## If you don’t have any budget concerns,you can go for this Alfa WiFi adapter, which costs around 4-10k depending on sales or market prices. They have more range
+👉[AC1200](https://www.amazon.in/Alfa-AC1900-Wifi-adapter-Long-Range/dp/B01MZD7Z76)
+👉[AC1900](https://www.amazon.in/Alfa-AC1900-Wifi-adapter-Long-Range/dp/B01MZD7Z76)
 
 # step 1. Monitor mode 
 #### First you need adapter who's support Monitor mode && packet injection if u using this TP-link T2U plus. So ur ready
