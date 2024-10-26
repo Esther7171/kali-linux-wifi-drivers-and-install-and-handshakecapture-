@@ -1,4 +1,17 @@
-# Installation of Wi-fi DRIVES 
+# Wireless Penetration Testing 
+
+##### Wireless penetration testing is a part of network penetration testing (NPT). This is a Security assessment process focused on Identifying vulnerabilities and reviewing general security tweaks in Network. Wireless pentesting is crucial for securing these networks against unauthorized access, data theft, and other cyber threats.
+##### An attacker can easily spoof and view the data of other users within the network.
+
+## Features
+- Basic 
+- Install Wi-fi Drivers for OS like kali,ubuntu etc..
+- Scan Local Area WiFi networks.
+- Deauthenticate Attack
+- Capture Handshake file.
+- Crack handshake using aircrack.
+- Crack handshake using John/Hashcat.
+- 
 
 # Install One Shot
 ## Copy and past on your's Kali Terminal 🙂
@@ -247,30 +260,17 @@ aircrack-ng Meow.txt.cap -w /usr/share/rockyou.txt
 - crack handshake ushing aircrack
 
 
-## Other Common Github Profile Sections
-👩‍💻 I'm currently student
-
-🧠 I'm currently learning more C.E.H
-
-👯‍♀️ to be honest i take help of @nlkguy credit to him as well.
-
-🤔 i though to combine all so it easy for begginer bez at start i didn't find a proper tutorial.
-
-💬 Ask me about...  "Nothing"
-
-📫 How to reach me... "@deathesther" instagram only please
 
 
-⚡️ nothing much to write
 
-## For queerys u can ask me on my instagram
-@deathesther    
-my username
- ## Badges
-
-just for fun i use this on tested purpose hehehehe
-
-[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
-[![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
-[![AGPL License](https://img.shields.io/badge/license-AGPL-blue.svg)](http://www.gnu.org/licenses/agpl-3.0)
-
+## Implementing general security tweaks 
+* #### Encryption Standards: Ensure that WPA2/WPA3 is used instead of older protocols like WEP or WPA, which are less secure.
+* #### SSID Management: Disable SSID broadcasting to make the network less visible. Use a non-identifiable SSID to avoid revealing the network type.
+* #### Strong Passwords: Implement complex passwords for network access and change them regularly.
+* #### MAC Address Filtering: Allow only authorized devices to connect by maintaining a whitelist of MAC addresses.
+* #### Network Segmentation: Separate guest and internal networks to limit exposure and potential attack vectors.
+* #### Disable WPS: Wi-Fi Protected Setup (WPS) can be vulnerable; disabling it can enhance security.
+* #### Monitor for Rogue Access Points: Use tools to detect unauthorized access points that may compromise the network.
+* #### Regular Firmware Updates: Keep access point firmware up to date to protect against known vulnerabilities.
+* #### Intrusion Detection Systems (IDS): Deploy IDS to monitor and alert on suspicious activity.
+* #### Conduct Regular Audits: Periodically review the security configurations and access logs to identify potential weaknesses.
