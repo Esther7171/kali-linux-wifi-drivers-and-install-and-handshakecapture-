@@ -6,6 +6,7 @@
 - [Requirements](https://github.com/Esther7171/WiFi-Pentesting/edit/main/README.md#requirements)
 - [Recommended Products](https://github.com/Esther7171/WiFi-Pentesting/edit/main/README.md#recommended-products)
 - [Install Wi-fi Drivers](https://github.com/Esther7171/WiFi-Pentesting/edit/main/README.md#recommended-products)
+- [Basics]()
 - Scan Local Area WiFi networks.
 - Deauthenticate Attack
 - Capture Handshake file.
@@ -30,7 +31,7 @@ An attacker can easily spoof and view other users' data within the network, perf
 # Recommended Products
 ### In my case im using TP-LINK Archer T2U Plus AC600 
 <div align="center">
-  <img src="https://github.com/Esther7171/web-development/assets/122229257/257d5af9-d9b3-40f3-b7fe-298c0fe03918" height="400"></div>img
+  <img src="https://github.com/Esther7171/web-development/assets/122229257/257d5af9-d9b3-40f3-b7fe-298c0fe03918" height="400"></div>
 </div>
 
 ## Why should i buy this adapter ?
@@ -55,8 +56,10 @@ git clone https://github.com/Esther7171/WiFi-Pentesting && cd WiFi-Pentesting &&
 ```
 * This Script will automaticall install Drivers kali as well External Wifi adapters.
 
-# Recommended Products
+# Basics
 
+The First this is to do Recorganize your wireless adapater name according to your os
+* In kali the Default name is ```wlan0```, If you have 2 wifi adapter connected at same time it will show ```wlan1```
 
 # step 1. Monitor mode 
 #### First you need adapter who's support Monitor mode && packet injection if u using this TP-link T2U plus. So ur ready
