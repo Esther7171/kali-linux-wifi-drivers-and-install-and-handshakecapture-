@@ -186,16 +186,6 @@ aircrack-ng Meow.txt.cap -w /usr/share/rockyou.txt
 ![Screenshot 2023-10-17 225248](https://github.com/Esther7171/web-development/assets/122229257/760fda9a-b63c-4b78-a45d-b087561de64a)
 * when it will crack it shou the password.
 
-## Features
-- install wlan0
-- Kali , parrot ubuntu install Wi-fi drivers.
-- enable Monitor mode.
-- Scan localarea wifi networks.
-- deauth devices.
-- capture handshake file.
-- crack handshake ushing aircrack
-
-
 
 
 
