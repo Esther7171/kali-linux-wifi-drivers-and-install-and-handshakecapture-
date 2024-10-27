@@ -200,3 +200,7 @@ aircrack-ng Meow.txt.cap -w /usr/share/rockyou.txt
 * #### Regular Firmware Updates: Keep access point firmware up to date to protect against known vulnerabilities.
 * #### Intrusion Detection Systems (IDS): Deploy IDS to monitor and alert on suspicious activity.
 * #### Conduct Regular Audits: Periodically review the security configurations and access logs to identify potential weaknesses.
+
+
+
+# d
