@@ -204,3 +204,4 @@ aircrack-ng Meow.txt.cap -w /usr/share/rockyou.txt
 
 
 # d
+s
